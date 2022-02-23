@@ -1,0 +1,9 @@
+<h1>Pokemon List</h1>
+<ul>
+<% @pokemons.each do |pokemon| %>
+  <li><%= link_to pokemon.name, pokemon_path(pokemon) %></li>
+  <%= link_to "Delete #{pokemon.name}", pokemon_path(pokemon), method: :delete %>
+<% end %>
+</ul>
+
+<%= link_to "Adicionar Pokémon", new_pokemon_path %>

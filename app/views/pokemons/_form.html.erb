@@ -1,0 +1,9 @@
+<%= simple_form_for(pokemon) do |p| %>
+    <div class="form-inputs">
+    <%= p.input :name %>
+    <%= p.input :species %>
+    <%= p.input :address %>
+    <%= p.input :found_on %>
+    <%= p.submit "Submit", class: "btn btn-primary" %>
+    </div>
+<% end %>
